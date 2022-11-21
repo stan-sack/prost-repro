@@ -1,0 +1,15 @@
+
+syntax = "proto3";
+package proto.bar;
+
+service BarService {
+  rpc DoBar(DoBarRequest) returns (DoBarResponse);
+}
+
+message DoBarRequest {
+  int64 id = 1;
+}
+
+message DoBarResponse {
+  int64 id = 1;
+}

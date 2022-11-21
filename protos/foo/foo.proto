@@ -1,0 +1,15 @@
+
+syntax = "proto3";
+package proto.foo;
+
+service FooService {
+  rpc DoFoo(DoFooRequest) returns (DoFooResponse);
+}
+
+message DoFooRequest {
+  int64 id = 1;
+}
+
+message DoFooResponse {
+  int64 id = 1;
+}
